@@ -1,4 +1,5 @@
 node_modules
+dist
 platforms
 hooks
 tags
@@ -29,8 +30,6 @@ ng-sample/app/**/*.js
 
 # Webpack configuration files
 webpack.config.js
-tsconfig.esm.json
-tsconfig.tns.json
 
 # IDEs and editors
 /.idea
