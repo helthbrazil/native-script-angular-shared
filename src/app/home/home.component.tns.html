@@ -1,0 +1,12 @@
+<!--The content below is only a placeholder and can be replaced.-->
+<ActionBar class="toolbar" [title]="title"></ActionBar>
+<StackLayout class="p-20 padding">
+    <LinearProgressBar *ngIf="showLoading"barColor="gray" indeterminate="true"></LinearProgressBar>
+    <TextField hint="Informe o CEP" [(ngModel)]="cep" maxLength="8" class="input input-border"></TextField>
+    <Button text="Buscar CEP" (tap)="buscarCep()" class="my-button"></Button>
+
+    <Label text="{{dados?.logradouro}}" class="far my-label border"></Label>
+    <Label text="{{dados?.bairro}}" class="far my-label border"></Label>
+    <Label text="{{dados?.localidade}}" class="far my-label border"></Label>
+    <Label text="{{dados?.ufa}}" class="far my-label border"></Label>
+</StackLayout>
